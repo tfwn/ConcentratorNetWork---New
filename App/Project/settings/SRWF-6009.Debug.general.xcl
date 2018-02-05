@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\bin\armjlink2.dll" 
+
+"D:\sunray\code\ConcentratorNetWork---New\App\Project\Debug\Exe\SRWF-6009.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\config\debugger\ST\STM32F1xx_XL.dmac" 
+
+
+
+

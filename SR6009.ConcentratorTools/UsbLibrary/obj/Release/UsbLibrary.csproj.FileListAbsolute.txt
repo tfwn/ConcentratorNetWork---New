@@ -1,0 +1,4 @@
+E:\PC software\6009Tools\UsbLibrary\bin\Release\UsbLibrary.dll
+E:\PC software\6009Tools\UsbLibrary\bin\Release\UsbLibrary.pdb
+E:\PC software\6009Tools\UsbLibrary\obj\Release\UsbLibrary.dll
+E:\PC software\6009Tools\UsbLibrary\obj\Release\UsbLibrary.pdb

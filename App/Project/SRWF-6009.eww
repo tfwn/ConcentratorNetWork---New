@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\SRWF-6009.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\Boot\Project\SRWF-6009-Boot.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

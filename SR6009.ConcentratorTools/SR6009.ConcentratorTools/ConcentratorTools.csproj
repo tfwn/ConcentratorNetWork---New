@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCC58C41-9E32-4FE3-9C28-DDF36602E09D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SR6009_Concentrator_Tools</RootNamespace>
+    <AssemblyName>SR6009_Concentrator_Tools</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SR6009_Concentrator_Tools.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\GetFunOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\GetFunOption.Designer.cs">
+      <DependentUpon>GetFunOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\GetFunOptionResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\GetFunOptionResult.Designer.cs">
+      <DependentUpon>GetFunOptionResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\ReadRealData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\ReadRealData.Designer.cs">
+      <DependentUpon>ReadRealData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\ReadRealDataResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\ReadRealDataResult.Designer.cs">
+      <DependentUpon>ReadRealDataResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\SetFunOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\SetFunOption.Designer.cs">
+      <DependentUpon>SetFunOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\SetFunOptionResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\SetFunOptionResult.Designer.cs">
+      <DependentUpon>SetFunOptionResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\ValveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\ValveControl.Designer.cs">
+      <DependentUpon>ValveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunList\ValveControlResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunList\ValveControlResult.Designer.cs">
+      <DependentUpon>ValveControlResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlHelper.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\GetFunOption.resx">
+      <DependentUpon>GetFunOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\GetFunOptionResult.resx">
+      <DependentUpon>GetFunOptionResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\ReadRealData.resx">
+      <DependentUpon>ReadRealData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\ReadRealDataResult.resx">
+      <DependentUpon>ReadRealDataResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\SetFunOption.resx">
+      <DependentUpon>SetFunOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\SetFunOptionResult.resx">
+      <DependentUpon>SetFunOptionResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\ValveControl.resx">
+      <DependentUpon>ValveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunList\ValveControlResult.resx">
+      <DependentUpon>ValveControlResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\General Options.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UsbLibrary\UsbLibrary.csproj">
+      <Project>{1a3bc7f8-d668-44b4-b471-896ceca8b811}</Project>
+      <Name>UsbLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\Company.png" />
+    <None Include="Resources\check_alt.png" />
+    <Content Include="Logo.ico" />
+    <None Include="Resources\01ec5b57e3e6b10000018c1b528eff.jpg" />
+    <Content Include="Resources\ma.gnolia.ico" />
+    <Content Include="Resources\align ver center.ico" />
+    <Content Include="Resources\sitemap.ico" />
+    <Content Include="Resources\web.ico" />
+    <None Include="Resources\riddit.ico" />
+    <None Include="Resources\warning.gif" />
+    <None Include="Resources\Back - Previous.ico" />
+    <None Include="Resources\Forward - Next.ico" />
+    <None Include="Resources\LineTop.ico" />
+    <None Include="Resources\LineLeft.ico" />
+    <None Include="Resources\LineRight.ico" />
+    <None Include="Resources\Add.ico" />
+    <None Include="Resources\Sub.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="6009_8009_Tools.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="align ver center.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Common.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="UsbLibrary.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
